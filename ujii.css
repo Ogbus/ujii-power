@@ -1,0 +1,75 @@
+body {
+    background-color: #f4f4f4;
+    color:  #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    /* border: 3px lightblue solid;
+    border-radius: 3% */
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+a:hover {
+    color: coral;
+}
+
+.main-div {
+    margin: auto;
+    width: 80%;
+}
+
+.divide {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.page-divider1 {
+    float: left;
+    width: 30%;
+}
+
+.page-divider2 {
+    float: left;
+    width: 70%;
+}
+
+.page-divider1 h3 {
+    color: #34b7eb;
+}
+
+.social ul {
+    list-style: none
+}
+.social li {
+    padding-bottom: 15px;
+}
+.social a{
+    font-style: italic;
+
+}
+
+.page-divider2 h2 {
+    color: #34b7eb;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+.page-divider2 h1 {
+    color: #34b7eb
+}
+
+#div-h1 {
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.skills, h2 {
+    margin-top: 20px;
+}
