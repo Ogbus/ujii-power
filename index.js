@@ -76,20 +76,90 @@
 
 
 // QUERRYSELECTORALL
-var h2 = document.querySelectorAll('#h2')
-console.log(h2)
-h2[0].textContent = 'How old are you?'
+// var h2 = document.querySelectorAll('#h2')
+// console.log(h2)
+// h2[0].textContent = 'How old are you?'
 
-for(var i =0; i < h2.length; i++) {
-    h2[i].style.color = 'blue'
-}
+// for(var i =0; i < h2.length; i++) {
+//     h2[i].style.color = 'blue'
+// }
 
-var odd = document.querySelectorAll('li:nth-child(odd)')
-for(var i = 0; i < odd.length; i++) {
-    odd[i].style.backgroundColor = '#f4f4f4'
-}
+// var odd = document.querySelectorAll('li:nth-child(odd)')
+// for(var i = 0; i < odd.length; i++) {
+//     odd[i].style.backgroundColor = '#f4f4f4'
+// }
 
-var even = document.querySelectorAll('li:nth-child(even)')
-for(var i = 0; i < even.length; i++) {
-    even[i].style.backgroundColor = '#b2b2b2'
-}
+// var even = document.querySelectorAll('li:nth-child(even)')
+// for(var i = 0; i < even.length; i++) {
+//     even[i].style.backgroundColor = '#b2b2b2'
+// }
+
+//TRAVERSING THE DOM //
+
+var itemList = document.querySelector('.item')
+//ParentNode
+// console.log(itemList.parentNode)
+// itemList.parentNode.style.backgroundColor = '#f4f4f4'
+// console.log(itemList.parentNode.parentNode.parentNode)
+
+//ParentElement
+// console.log(itemList.parentElement)
+// itemList.parentElement.style.backgroundColor = '#f4f4f4'
+// console.log(itemList.parentElement.parentElement.parentElement)
+
+//parentNode and parentElement are the same
+
+//ChildNode
+// console.log(itemList.childNodes) this adds textnodes(also known as whitespace)
+
+// children
+// console.log(itemList.children)
+// console.log(itemList.children[1])
+// itemList.children[2].style.backgroundColor = 'lightBlue'
+//it is better to use children to manipulate the elements in the DOM
+
+//firstChild
+// console.log(itemList.firstChild)
+
+// firstElementChild
+// console.log(itemList.firstElementChild)
+// itemList.firstElementChild.textContent = 'hello 1'
+
+// lastChild
+// console.log(itemList.lastChild)
+
+//lastChildElement
+// console.log(itemList.lastElementChild)
+// itemList.lastElementChild.textContent = 'hello 5'
+
+// console.log(itemList.nextElementSibling)
+
+// previousSibling
+// console.log(itemList.previousSibling)
+// console.log(itemList.previousElementSibling)
+// itemList.previousElementSibling.style.backgroundColor = 'green'
+
+//creating a div
+var newDiv = document.createElement('div');
+
+//adding class
+newDiv.className = 'hello'
+
+// addiing id
+newDiv.id = 'hello1'
+
+// adding attribute
+newDiv.setAttribute('title', 'hello world')
+
+// creating text node
+var newDivText = document.createTextNode('hello work')
+
+// adding text to div
+newDiv.appendChild(newDivText)
+
+//adding everything to dom
+var main = document.querySelector('div .sub-main')
+var h1 = document.querySelector('div h1')
+
+console.log(newDiv)
+main.insertBefore(newDiv, h1)
