@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.main {
+    margin-left: 80px
+}
+
+header {
+    background-color: lightgreen;
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.list-items {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px
+}
+
+li {
+    margin-bottom: 10px 
+}
+
+.list-items ul {
+    list-style: none;
+}
+
+.btn {
+    float: right;
+}
+
+.btn-danger {
+    background: red;
+    color: white;
+    border: none
+}
